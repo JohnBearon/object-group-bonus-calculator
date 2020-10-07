@@ -48,7 +48,7 @@ for (let i = 0; i < employees.length; i++) {
 
 function newEmployeeObject(employee) {
   const bonusObject = {
-    name: '',
+    name: employee.name,
     bonusPercentage: 0,
     totalCompensation: 0,
     totalBonus: 0,
