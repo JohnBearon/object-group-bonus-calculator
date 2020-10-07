@@ -42,11 +42,18 @@ const employees = [
 
 for (let i = 0; i < employees.length; i++) {
   const employeeObj = employees[i];
-  newEmployeeObject(employeeObj);
+  const newEmployee = newEmployeeObject(employeeObj);
+  console.log(newEmployee);
 }
 
-function newEmployeeObject(kittyKat) {
-  console.log(kittyKat);
+function newEmployeeObject(employee) {
+  const bonusObject = {
+    name: '',
+    bonusPercentage: 0,
+    totalCompensation: 0,
+    totalBonus: 0,
+  };
+  return bonusObject;
 }
 
 // function calcBonus(employee) {
